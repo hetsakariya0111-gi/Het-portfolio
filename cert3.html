@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certificate - DSA</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Crimson+Pro:ital,wght@0,400;0,700&family=Orbitron:wght@700&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: transparent; width: 900px; height: 600px; display: flex; justify-content: center; align-items: center; }
+  .certificate {
+    width: 100%; height: 600px;
+    background: #050510;
+    border: 2px solid #00ffcc44;
+    position: relative;
+    padding: 50px;
+    box-shadow: inset 0 0 100px rgba(0,255,200,0.1);
+  }
+  .corner-bl { position: absolute; top: 0; left: 0; width: 50px; height: 50px; border-top: 5px solid #00ffcc; border-left: 5px solid #00ffcc; }
+  .corner-tr { position: absolute; bottom: 0; right: 0; width: 50px; height: 50px; border-bottom: 5px solid #00ffcc; border-right: 5px solid #00ffcc; }
+  .header-tag { font-family: 'Rajdhani', sans-serif; font-size: 12px; letter-spacing: 5px; color: #00ffcc66; text-align: center; margin-bottom: 30px; }
+  .title { font-family: 'Rajdhani', sans-serif; font-size: 50px; font-weight: 700; color: #ccffee; text-align: center; border-bottom: 2px solid #00ffcc22; padding-bottom: 20px; margin-bottom: 40px; text-transform: uppercase; }
+  .presented { font-family: 'Crimson Pro', serif; font-size: 18px; color: #88ccbb; text-align: center; margin-bottom: 10px; }
+  .name { font-family: 'Crimson Pro', serif; font-size: 65px; font-style: italic; color: #00ffcc; text-align: center; margin-bottom: 10px; letter-spacing: 2px; }
+  .meta { font-family: 'Orbitron', sans-serif; font-size: 11px; letter-spacing: 3px; color: #00ffcc44; text-align: center; margin-bottom: 60px; }
+  .footer { display: flex; justify-content: space-between; padding: 0 40px; align-items: flex-end; }
+  .sig-box { text-align: center; }
+  .sig-hand { font-family: 'Mrs+Saint+Delafield', cursive; font-size: 60px; color: #00ffcc88; margin-bottom: -35px; }
+  .line { width: 160px; height: 1px; background: #00ffcc44; margin: 0 auto 10px; }
+  .sig-name { font-family: 'Rajdhani', sans-serif; font-size: 13px; font-weight: 700; color: #00ffccaa; }
+  .sig-role { font-family: 'Rajdhani', sans-serif; font-size: 10px; color: #00ffcc44; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="certificate">
+    <div class="corner-bl"></div><div class="corner-tr"></div>
+    <p class="header-tag">// COMPUTATIONAL EXCELLENCE RECORD</p>
+    <h1 class="title">Data Structures & Algorithms</h1>
+    <p class="presented">Validates the achievement of</p>
+    <div class="name">Het Sakariya</div>
+    <p class="meta">1ST YEAR CSE · ROLL NO. 2024–01 · SECURED A+ GRADE</p>
+    <div class="footer">
+      <div class="sig-box">
+        <p class="sig-hand" style="font-family:'Mrs Saint Delafield'">S.K. Gupta</p>
+        <div class="line"></div>
+        <p class="sig-name">DR. S. K. GUPTA</p>
+        <p class="sig-role">DEAN OF ENGINEERING</p>
+      </div>
+      <div class="sig-box">
+        <p class="sig-hand" style="font-family:'Mrs Saint Delafield'">A. Rao</p>
+        <div class="line"></div>
+        <p class="sig-name">PROF. ANJALI RAO</p>
+        <p class="sig-role">DSA SPECIALIST</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

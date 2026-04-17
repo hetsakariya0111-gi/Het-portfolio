@@ -1,0 +1,87 @@
+.about-section {
+  padding: 80px 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-card {
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-tagline {
+  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.about-bio {
+  font-size: 1.05rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+}
+
+.about-details {
+  font-size: 1rem;
+  color: #c8d5f3;
+  line-height: 1.75;
+  margin-bottom: 0.9rem;
+}
+
+.about-university {
+  color: #e3ebff;
+  margin-bottom: 1.4rem;
+}
+
+.about-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1.7rem;
+}
+
+.about-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #d9e2ff;
+}
+
+.about-meta-item a {
+  color: inherit;
+}
+
+.about-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 240px;
+  padding: 0.85rem 1.2rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(10, 25, 70, 0.35);
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 70px 1rem;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .about-tagline {
+    font-size: 1.2rem;
+  }
+}

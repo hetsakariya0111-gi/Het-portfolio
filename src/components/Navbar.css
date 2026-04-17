@@ -1,0 +1,136 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.3s ease;
+  padding: 1.5rem 0;
+}
+
+.navbar-scrolled {
+  padding: 1rem 0;
+  border-radius: 0 0 20px 20px;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.navbar-desktop {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.resume-btn {
+  background: var(--bg-card);
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  color: var(--accent-blue);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+.resume-btn:hover {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  color: #fff;
+}
+
+.navbar-mobile {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  width: 90%;
+  margin-top: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  background: rgba(8, 10, 18, 0.985);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55);
+}
+
+.navbar-mobile .nav-link {
+  color: #f5f7ff;
+  font-weight: 600;
+}
+
+.navbar-mobile .nav-link:hover {
+  color: var(--accent-blue);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    z-index: 1000;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-toggle {
+    display: block;
+    position: relative;
+    z-index: 1002;
+  }
+  .navbar-mobile-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 7, 14, 0.92);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 86px;
+    z-index: 1001;
+  }
+  .navbar-mobile {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: min(420px, 92%);
+    margin-top: 0;
+    border-radius: 18px;
+    gap: 1.1rem;
+    padding: 1.7rem 1.2rem;
+    background: rgba(10, 12, 22, 0.995);
+  }
+  .navbar-mobile .nav-link {
+    font-size: 1.08rem;
+  }
+}

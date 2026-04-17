@@ -1,0 +1,49 @@
+.figma-section {
+  padding: 80px 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.figma-empty {
+  margin-top: 2rem;
+  padding: 1.2rem 1.4rem;
+  color: #d6e0fa;
+  border-radius: 14px;
+}
+
+.figma-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.figma-card {
+  overflow: hidden;
+}
+
+.figma-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.figma-card-content {
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.figma-card-content h3 {
+  margin-bottom: 0.4rem;
+}
+
+.figma-card-content p {
+  color: var(--text-dim);
+  margin-bottom: 0.9rem;
+}
+
+.figma-card-content a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--accent-blue);
+}

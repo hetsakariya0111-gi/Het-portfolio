@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certificate - Python</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: transparent; width: 900px; height: 600px; display: flex; justify-content: center; align-items: center; }
+  .certificate {
+    width: 100%; height: 600px;
+    background: #0d0d1a;
+    border: 3px solid #2a2a5a;
+    position: relative;
+    padding: 60px 70px;
+    color: #e8e8ff;
+  }
+  .inner-frame { position: absolute; inset: 15px; border: 1px solid rgba(100,100,255,0.3); pointer-events: none; }
+  .org-name { font-family: 'Cinzel', serif; font-size: 14px; letter-spacing: 5px; color: #8888cc; text-align: center; margin-bottom: 40px; }
+  .title { font-family: 'Playfair Display', serif; font-size: 52px; text-align: center; margin-bottom: 30px; }
+  .title span { color: #7878ff; }
+  .presented { text-align: center; font-size: 16px; color: #7777aa; margin-bottom: 15px; font-family: 'Playfair Display', serif; }
+  .name { font-family: 'Playfair Display', serif; font-size: 60px; font-style: italic; color: #c8c8ff; text-align: center; margin-bottom: 10px; border-bottom: 1px solid rgba(100,100,255,0.4); display: inline-block; width: 80%; margin-left: 10%; padding-bottom: 10px; }
+  .info { text-align: center; font-size: 14px; color: #5555aa; margin-bottom: 50px; }
+  .footer { display: flex; justify-content: space-between; padding: 0 50px; align-items: flex-end; }
+  .sig-block { text-align: center; }
+  .sig-hand { font-family: 'Sacramento', crossorigin; font-size: 45px; color: #7878ff; margin-bottom: -15px; }
+  .sig-line { width: 150px; height: 1px; background: rgba(100,100,255,0.5); margin: 0 auto 10px; }
+  .sig-name { font-size: 12px; letter-spacing: 2px; color: #8888cc; font-weight: bold; }
+  .sig-role { font-size: 10px; color: #5555aa; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="certificate">
+    <div class="inner-frame"></div>
+    <p class="org-name">GLOBAL INSTITUTE OF PROGRAMMING</p>
+    <h1 class="title"><span>Python</span> Specialist</h1>
+    <p class="presented">Awarded to</p>
+    <div class="name">Het Sakariya</div>
+    <p class="info">CSE STUDENT · CLASS OF 2026</p>
+    <div class="footer">
+      <div class="sig-block">
+        <p class="sig-hand">A. Patel</p>
+        <div class="sig-line"></div>
+        <p class="sig-name">DR. AMIT PATEL</p>
+        <p class="sig-role">H.O.D. COMPUTER SCIENCE</p>
+      </div>
+      <div class="sig-block">
+        <p class="sig-hand">R. Verma</p>
+        <div class="sig-line"></div>
+        <p class="sig-name">PROF. RAHUL VERMA</p>
+        <p class="sig-role">PROGRAM DIRECTOR</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

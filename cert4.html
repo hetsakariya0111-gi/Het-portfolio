@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certificate - CS Intro</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,400&family=Montserrat:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: transparent; width: 900px; height: 600px; display: flex; justify-content: center; align-items: center; }
+  .certificate {
+    width: 100%; height: 600px;
+    background: #16213e;
+    border: 1px solid rgba(229,195,100,0.3);
+    position: relative;
+    padding: 60px 80px;
+    color: #e5c364;
+  }
+  .frame { position: absolute; inset: 20px; border: 1px solid rgba(229,195,100,0.15); }
+  .org { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 6px; text-align: center; margin-bottom: 50px; }
+  .cert-head { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 8px; text-align: center; margin-bottom: 25px; opacity: 0.6; }
+  .title { font-family: 'EB Garamond', serif; font-size: 44px; font-weight: 700; text-align: center; line-height: 1.2; margin-bottom: 40px; color: #fff; }
+  .title em { color: #e5c364; }
+  .presented { text-align: center; font-size: 16px; margin-bottom: 10px; font-family: 'EB Garamond', serif; font-style: italic; color: rgba(255,255,255,0.7); }
+  .name { font-family: 'EB Garamond', serif; font-size: 58px; font-style: italic; color: #fff; text-align: center; margin-bottom: 5px; }
+  .meta { font-family: 'Montserrat', sans-serif; font-size: 11px; letter-spacing: 3px; text-align: center; opacity: 0.5; margin-bottom: 50px; }
+  .footer { display: flex; justify-content: space-between; align-items: flex-end; padding: 0 40px; }
+  .sig-block { text-align: center; }
+  .sig-hand { font-family: 'Great Vibes', cursive; font-size: 40px; color: #fff; margin-bottom: -10px; }
+  .line { width: 140px; height: 0.5px; background: #e5c364; margin: 0 auto 10px; }
+  .sig-name { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+  .sig-role { font-family: 'Montserrat', sans-serif; font-size: 9px; opacity: 0.6; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="certificate">
+    <div class="frame"></div>
+    <p class="org">ENGINEERING EXCELLENCE BOARD</p>
+    <p class="cert-head">CERTIFICATE OF ACADEMIC ACHIEVEMENT</p>
+    <h1 class="title">Fundamentals of<br><em>Computer Science</em></h1>
+    <p class="presented">Duly conferred upon</p>
+    <div class="name">Het Sakariya</div>
+    <p class="meta">1ST YEAR STUDENT · SECURED DISTINCTION · 2025–26</p>
+    <div class="footer">
+      <div class="sig-block">
+        <p class="sig-hand">P. Mehta</p>
+        <div class="line"></div>
+        <p class="sig-name">DR. PRIYA MEHTA</p>
+        <p class="sig-role">H.O.D. COMPUTER SCIENCE</p>
+      </div>
+      <div class="sig-block">
+        <p class="sig-hand">S. Kumar</p>
+        <div class="line"></div>
+        <p class="sig-name">PROF. SUNIL KUMAR</p>
+        <p class="sig-role">COURSE COORDINATOR</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

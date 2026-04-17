@@ -1,0 +1,131 @@
+.extra-sections-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 4rem 2rem;
+}
+
+.custom-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.cert-card {
+  padding: 1rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.3s;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(7, 12, 31, 0.45);
+}
+
+.cert-full-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cert-info-block h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.cert-info-block p {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+/* Hackathons */
+.hack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.hack-card {
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hack-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(7, 12, 31, 0.45);
+}
+
+.hack-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--accent-purple);
+}
+
+.hack-header h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.outcome-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--accent-blue);
+  color: #000;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+/* Achievements */
+.achieve-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.achieve-card {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+.achieve-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 24px rgba(7, 12, 31, 0.4);
+}
+
+.accent-icon {
+  color: var(--accent-blue);
+}
+
+@media (max-width: 768px) {
+  .certs-grid, .hack-grid, .achieve-grid {
+    grid-template-columns: 1fr;
+  }
+}
