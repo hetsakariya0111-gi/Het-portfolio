@@ -23,7 +23,6 @@
   position: relative;
   flex-shrink: 0;
   margin-top: 0;
-  transform-style: preserve-3d;
   perspective: 1000px;
 }
 
